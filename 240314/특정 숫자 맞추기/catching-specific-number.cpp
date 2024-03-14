@@ -13,6 +13,7 @@ int main() {
             cout << "Lower" << endl;
         else
             cout << "Good" << endl;
+            break;
     }
     return 0;
 }
