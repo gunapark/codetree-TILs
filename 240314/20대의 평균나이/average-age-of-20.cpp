@@ -3,20 +3,19 @@ using namespace std;
 
 int main() {
     // 여기에 코드를 작성해주세요.
-    int sum = 0, count =0;
+    double sum = 0, count =0;
 
     while(1){
         int a;
         cin >> a;
         if(a>=20 && a<30){
             sum += a;
-            cout << sum;
-        }
-        else
+            count++;
+        } else
             break;
     }
     cout << fixed;
     cout.precision(2);
-    cout << double(sum)/count;
+    cout << sum/count;
     return 0;
 }
