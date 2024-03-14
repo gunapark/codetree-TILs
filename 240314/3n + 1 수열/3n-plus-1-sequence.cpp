@@ -7,15 +7,17 @@ int main() {
     cin >> n;
 
     while(1){
-        count++;
+        
         if(n%2==0){
             n /=2;
         } else {
             n = n*3 +1;
         }
+        count++;
         if(n==1){
             break;
         }
+        
     }
     cout << count;
     return 0;
