@@ -16,7 +16,7 @@ int main() {
                     cnt='A';
                 }
             } else
-            cout << "  ";
+                cout << "  ";
         }
         cout << endl;
     }
