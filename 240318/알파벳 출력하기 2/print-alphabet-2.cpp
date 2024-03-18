@@ -12,7 +12,7 @@ int main() {
             if(j>=i){
                 cout << cnt << " ";
                 cnt++;
-                if (cnt=='Z'){
+                if (cnt=='Z'+1){
                     cnt='A';
                 }
             } else
