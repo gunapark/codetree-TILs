@@ -8,8 +8,8 @@ int main() {
 
     for(int i=0;i<n;i++){
         for(int j=0;j<=i;j++){
-            cout << char(65+cnt);
             cnt++;
+            cout << char(64+cnt);
             if ((65+cnt)==int('Z'))
                 cnt=0;
         }
