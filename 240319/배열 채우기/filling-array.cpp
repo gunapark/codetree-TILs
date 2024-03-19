@@ -7,11 +7,12 @@ int main() {
     for(i;i<10;i++){
         int a;
         cin >> a;
+        arr[i]=a;
         if (a==0){
             i--;
             break;
         }
-        arr[i]=a;
+        
     }
     for(i;i>=0;i--){
         cout << arr[i] << " ";
