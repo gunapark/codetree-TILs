@@ -25,6 +25,7 @@ int main() {
             for(int i=0;i<n;i++){
                 if(arr[i]==b){
                     index = i+1;
+                    break;
                 }
             } if(index==-1){
                 cout << 0;
