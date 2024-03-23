@@ -5,9 +5,9 @@ int main() {
     // 여기에 코드를 작성해주세요.
     int n,q;
     cin >> n >> q;
-    int arr[n];
+    int arr[n+1];
 
-    for(int i=0;i<n;i++){
+    for(int i=1;i<=n;i++){
         cin >> arr[i];
     }
 
@@ -17,14 +17,14 @@ int main() {
         if(a==1){
             int b;
             cin >> b;
-            cout << arr[b-1];
+            cout << arr[b];
         } else if(a==2){
             int b;
             cin >> b;
             int index=-1;
-            for(int i=0;i<n;i++){
+            for(int i=1;i<=n;i++){
                 if(arr[i]==b){
-                    index = i+1;
+                    index = i;
                     break;
                 }
             } if(index==-1){
@@ -32,10 +32,10 @@ int main() {
             } else {
                 cout << index;
             }
-        } else {
+        } else if(a==3){
             int b, c;
             cin >> b >> c;
-            for(i=b-1;i<=c-1;i++){
+            for(int i=b;i<=c;i++){
                 cout << arr[i] << " ";
             }
         }
