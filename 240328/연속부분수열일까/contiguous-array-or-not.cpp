@@ -26,8 +26,9 @@ int main() {
                     break;
                 }
             } if(j==n2){
-                cout << "Yes";
                 bool a = true;
+                cout << "Yes";
+                
                 break;
             } 
         }
