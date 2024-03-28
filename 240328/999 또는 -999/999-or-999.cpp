@@ -18,11 +18,10 @@ int main() {
     int min = arr[0];
 
     for(int j=1;j<i;j++){
-        if(arr[j]>max){
+        if(arr[j]>max)
             max = arr[j];
-        } else {
+        if(arr[j]<min)
             min = arr[j];
-        }
     }
     cout << max << " " << min;
     return 0;
