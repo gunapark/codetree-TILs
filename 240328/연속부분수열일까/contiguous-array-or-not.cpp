@@ -28,14 +28,11 @@ int main() {
             } if(j==n2){
                 bool a = true;
                 cout << "Yes";
-                
                 break;
             } 
         }
     }
-    if(a==false){
-        cout << "No";
-    }
+    cout << a;
     
     return 0;
 }
