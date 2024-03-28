@@ -6,7 +6,7 @@ int main() {
     //A, B 수열의 원소 개수 입력
     int n1, n2;
     cin >> n1 >> n2;
-
+    bool a = false;
     int arrA[n1];
     int arrB[n2];
 
@@ -27,10 +27,14 @@ int main() {
                 }
             } if(j==n2){
                 cout << "Yes";
+                bool a = true;
                 break;
             } 
         }
     }
-    cout << "No";
+    if(a==false){
+        cout << "No";
+    }
+    
     return 0;
 }
