@@ -26,13 +26,15 @@ int main() {
                     break;
                 }
             } if(j==n2){
-                bool a = true;
+                a = true;
                 cout << "Yes";
                 break;
             } 
         }
     }
-    cout << a;
+    if(a==false){
+        cout << "No";
+    }
     
     return 0;
 }
