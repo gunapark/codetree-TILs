@@ -14,9 +14,9 @@ int main() {
         cout << str;
         return 0;
     }
-    
-    for(int j=0;j<i;j++){
-        cout << str[len-1-j];
+
+    for(int j=1;j=<i;j++){
+        cout << str[len-j];
     }
     
     return 0;
