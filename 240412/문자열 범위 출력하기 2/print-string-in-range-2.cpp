@@ -11,7 +11,7 @@ int main() {
     int len = str.length();
 
     if(i>len){
-        cout << str;
+        
         
     } else {
         for(int j=1;j<=i;j++){
