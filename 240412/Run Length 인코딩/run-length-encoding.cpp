@@ -14,11 +14,19 @@ int main() {
     int cnt = 1;
     for(int i=0;i<len;i++){
         if(str[i]==str[i+1]){
+            cnt ++;
             continue;
         } else 
-            new_len +=2;
-    }
+            if(cnt < 10){
+                new_len +=2;
+            } else if(cnt <100){
+                new_len +=3;
+            } else
+                new_len+=4;
+        }
     cout << new_len << endl;
+
+    cnt = 1;
     for(int i=0;i<len;i++){
         if(str[i]==str[i+1]){
             cnt ++;
