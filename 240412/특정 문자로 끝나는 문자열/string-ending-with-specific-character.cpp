@@ -12,9 +12,11 @@ int main() {
     cin >> input;
     int cnt=0;
     for(int i=0;i<10;i++){
-        if(str[i][str[i].length()-1] == input)
+        if(str[i][str[i].length()-1] == input){
             cout << str[i]<< endl;
             cnt++;
+            
+        }
     }
     if(cnt==0) 
         cout << "None";
