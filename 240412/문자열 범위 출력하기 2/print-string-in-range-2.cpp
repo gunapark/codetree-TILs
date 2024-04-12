@@ -10,7 +10,7 @@ int main() {
     cin >> i;
     int len = str.length();
 
-    if(i>len){
+    if(len-i<0){
         cout << str;
         return 0;
     }
