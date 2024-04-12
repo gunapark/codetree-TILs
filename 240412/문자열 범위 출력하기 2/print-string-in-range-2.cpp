@@ -10,6 +10,11 @@ int main() {
     cin >> i;
     int len = str.length();
 
+    if(i>len){
+        cout << str;
+        return 0;
+    }
+    
     for(int j=0;j<i;j++){
         cout << str[len-1-j];
     }
