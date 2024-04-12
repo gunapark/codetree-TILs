@@ -10,14 +10,16 @@ int main() {
     cin >> i;
     int len = str.length();
 
-    if(len-i<0){
+    if(i>len){
         cout << str;
-        return 0;
+        
+    } else {
+        for(int j=1;j<=i;j++){
+            cout << str[len-j];
+        }
     }
 
-    for(int j=1;j<=i;j++){
-        cout << str[len-j];
-    }
+    
     
     return 0;
 }
