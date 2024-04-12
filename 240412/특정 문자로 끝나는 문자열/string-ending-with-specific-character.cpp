@@ -16,5 +16,6 @@ int main() {
             cout << str[i]<< endl;
             cnt++;
     }
+    if(cnt==0) cout << "None";
     return 0;
 }
