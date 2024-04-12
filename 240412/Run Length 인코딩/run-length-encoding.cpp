@@ -23,6 +23,7 @@ int main() {
                 new_len +=3;
             } else
                 new_len+=4;
+            cnt=1;
         }
     cout << new_len << endl;
 
