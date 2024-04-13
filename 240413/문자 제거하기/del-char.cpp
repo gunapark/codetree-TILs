@@ -12,10 +12,10 @@ int main() {
     while(len!=1){
         int n;
         cin >> n;
-        if (n>len){
+        if (n>=len){
             s.erase(len-1,1);
             cout << s << endl;
-            len --;
+            len--;
         }
         else{
             s.erase(n,1);
