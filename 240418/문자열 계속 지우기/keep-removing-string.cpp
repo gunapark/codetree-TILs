@@ -19,8 +19,7 @@ int main() {
         for(int j=0;j<len_B;j++){
             if(A[i+j]==B[j]){
                 a = true;
-            } else
-                a = false;
+            }
         }
         cout << a << endl;
         if(a==true){
