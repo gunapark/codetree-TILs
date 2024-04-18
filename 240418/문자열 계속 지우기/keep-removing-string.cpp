@@ -24,6 +24,7 @@ int main() {
         }
         if(a==true){
             A.erase(i,len_B);
+            cout << A.length() << endl;
             i=0;
         }
     }
