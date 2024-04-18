@@ -14,7 +14,7 @@ int main() {
     int len_B = B.length();
     int i;
 
-    for(i=0;i<=len_A;i++){
+    for(i=0;i<=A.length();i++){
         bool a = false;
         for(int j=0;j<len_B;j++){
             if(A[i+j]==B[j]){
@@ -24,7 +24,6 @@ int main() {
         }
         if(a==true){
             A.erase(i,len_B);
-            len_A -= len_B;
             i=0;
         }
     }
