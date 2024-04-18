@@ -21,10 +21,10 @@ int main() {
                 a = true;
             }
         }
-        cout << a << endl;
+        
         if(a==true){
             A.erase(i,len_B);
-            cout << A[0] << " " << A[1] << endl;
+            cout << "erase" << endl;
             i=0;
         }
     }
