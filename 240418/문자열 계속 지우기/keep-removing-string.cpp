@@ -15,7 +15,9 @@ int main() {
     int i;
 
     for(i=0;i<A.length();i++){
-        
+        if(A.length()-len_B < 0){
+            break;
+        }
         bool a = false;
         
         for(int j=0;j<len_B;j++){
