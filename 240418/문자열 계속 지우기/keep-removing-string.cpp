@@ -24,9 +24,10 @@ int main() {
         
         if(a==true){
             A.erase(i,len_B);
-            cout << "erase" << endl;
-            i=0;
+            
+            
         }
+        i=0;
     }
 
     cout << A;
