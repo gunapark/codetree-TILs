@@ -16,18 +16,19 @@ int main() {
 
     for(i=0;i<A.length();i++){
         bool a = false;
+        
         for(int j=0;j<len_B;j++){
             if(A[i+j]==B[j]){
                 a = true;
+            } else{
+                a = false;
             }
         }
         
         if(a==true){
             A.erase(i,len_B);
-            
-            
+            i=0;
         }
-        i=0;
     }
 
     cout << A;
