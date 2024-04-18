@@ -24,7 +24,7 @@ int main() {
         cout << a << endl;
         if(a==true){
             A.erase(i,len_B);
-            cout << A << endl;
+            cout << A[0] << " " << A[1] << endl;
             i=0;
         }
     }
