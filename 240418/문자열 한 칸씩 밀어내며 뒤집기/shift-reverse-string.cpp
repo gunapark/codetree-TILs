@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
     string s;
-    string new_s;
+    string new_s = "";
     int n;
 
     cin >> s >> n;
@@ -26,6 +26,7 @@ int main() {
                 new_s += s.substr(len-1-i,1);
             }
             s = new_s;
+            new_s = "";
             cout << s << endl;
         }
     }
