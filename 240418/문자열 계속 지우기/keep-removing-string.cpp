@@ -28,7 +28,7 @@ int main() {
             i=0;
         }
     }
-    cout << i;
+    cout << len_A-len_B << endl;
     
     cout << A;
 
