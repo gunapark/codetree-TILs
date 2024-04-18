@@ -14,7 +14,7 @@ int main() {
     int len_B = B.length();
     int i;
 
-    for(i=0;i<=len_A-len_B;i++){
+    for(i=0;i<=len_A;i++){
         bool a = false;
         for(int j=0;j<len_B;j++){
             if(A[i+j]==B[j]){
@@ -28,8 +28,7 @@ int main() {
             i=0;
         }
     }
-    cout << len_A-len_B << endl;
-    
+
     cout << A;
 
     return 0;
