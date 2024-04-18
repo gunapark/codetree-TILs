@@ -12,8 +12,9 @@ int main() {
     
     int len_A = A.length();
     int len_B = B.length();
+    int i;
 
-    for(int i=0;i<len_A-len_B;i++){
+    for(i=0;i<=len_A-len_B;i++){
         bool a = false;
         for(int j=0;j<len_B;j++){
             if(A[i+j]==B[j]){
@@ -26,9 +27,9 @@ int main() {
             len_A -= len_B;
             i=0;
         }
-        
     }
-
+    cout << i;
+    
     cout << A;
 
     return 0;
