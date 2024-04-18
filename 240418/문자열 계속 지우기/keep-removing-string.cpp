@@ -22,6 +22,7 @@ int main() {
             } else
                 a = false;
         }
+        cout << a << endl;
         if(a==true){
             A.erase(i,len_B);
             cout << A << endl;
