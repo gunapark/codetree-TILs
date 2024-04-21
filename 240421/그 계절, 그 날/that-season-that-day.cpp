@@ -11,8 +11,7 @@ bool is_yoon_year(int Y){
             return false;
         }
         return true;
-    }
-    return false;
+    } else return false;    
 }
 
 bool is_in_day(int Y, int M, int D){
