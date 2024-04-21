@@ -17,10 +17,15 @@ bool is_yoon_year(int Y){
 bool is_in_day(int Y, int M, int D){
     if(M==1 || M==3 || M==5 || M==7 || M==8 || M==10 || M==12) return true;
     else{
-        if(M==2 && is_yoon_year(Y)){
-            if(D>29) return false;
-            else return true;
-        }
+        if(M==2){
+            if(is_yoon_year(Y)){
+                if(D>29) return false;
+                else return true;
+            } else{
+                if(D>28) return false;
+                else return true;
+            }
+        } 
         if(D>29) return false;
         else return true;
     }
