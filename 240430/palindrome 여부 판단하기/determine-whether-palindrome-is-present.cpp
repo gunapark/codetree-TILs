@@ -8,8 +8,8 @@ bool is_palindrome(string &A){
     for(int i=0;i<str_len/2;i++){
         if(A[0]==A[str_len-1-i]) same = true;
         else{
-            samse = false;
-            break;
+            same = false;
+            return same;
         }
     }
     return same;
