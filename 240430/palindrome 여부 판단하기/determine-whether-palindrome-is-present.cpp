@@ -7,7 +7,10 @@ bool is_palindrome(string &A){
     bool same = false;
     for(int i=0;i<str_len/2;i++){
         if(A[0]==A[str_len-1-i]) same = true;
-        else false;
+        else{
+            samse = false;
+            break;
+        }
     }
     return same;
 }
