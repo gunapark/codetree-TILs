@@ -6,7 +6,7 @@ bool is_palindrome(string &A){
     int str_len = A.length();
     bool same = false;
     for(int i=0;i<str_len/2;i++){
-        if(A[0]==A[str_len-1-i]) same = true;
+        if(A[i]==A[str_len-1-i]) same = true;
         else{
             same = false;
             return same;
