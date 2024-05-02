@@ -4,6 +4,7 @@ using namespace std;
 
 int maximum(int n,int *arr){
     if(n==0) return arr[0];
+    maximum(n-1,arr);
     if(arr[n]>maximum(n-1,arr)) return arr[n];
     else return maximum(n-1,arr);
 }
