@@ -12,11 +12,11 @@ int main() {
         cin >> arr[i];
     }
 
-    sort(arr, arr+n);
-    
     cout << arr[0] << " ";
-    for(int i=2;i<n;i+=2){
-        cout << arr[i/2] << " ";
+    for(int j=2;j<n;j+=2){
+        sort(arr, arr+j+1);
+        cout << arr[j/2] << " ";
     }
+
     return 0;
 }
