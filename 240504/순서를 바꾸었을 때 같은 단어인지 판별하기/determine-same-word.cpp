@@ -16,7 +16,7 @@ int main() {
         cout << "No";
         return 0;
     }
-    for(int i=0;i<len;i++){
+    for(int i=0;i<len_A;i++){
         if(A[i]=!B[i]){
             cout << "No";
             return 0;
