@@ -9,8 +9,13 @@ int main() {
     sort(A.begin(),A.end());
     sort(B.begin(), B.end());
 
-    int len = A.length();
+    int lenA = A.length();
+    int lenB = B.length();
 
+    if(lenA!=lenB){
+        cout << "No";
+        return 0;
+    }
     for(int i=0;i<len;i++){
         if(A[i]=!B[i]){
             cout << "No";
