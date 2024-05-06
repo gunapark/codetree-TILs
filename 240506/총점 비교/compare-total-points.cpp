@@ -24,7 +24,7 @@ bool cmp(student a, student b){
 int main() {
     int n;
     cin >> n;
-    student students[n];
+    student students[n]={};
     
     for(int i=0;i<n;i++){
         cin >> students[i].name >> students[i].kor >> students[i].eng >> students[i].math;
