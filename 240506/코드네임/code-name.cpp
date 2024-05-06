@@ -7,10 +7,10 @@ class agent{
         string codename;
         int score;
 
-    agent(string _codename="", int _score=0){
-        this->codename = _codename;
-        this->score = _score;
-    }
+        agent(string _codename="", int _score=0){
+            this->codename = _codename;
+            this->score = _score;
+        }
 };
 
 int main() {
