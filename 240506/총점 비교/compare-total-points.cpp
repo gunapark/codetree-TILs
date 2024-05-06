@@ -27,7 +27,10 @@ int main() {
     student students[n]={};
     
     for(int i=0;i<n;i++){
-        cin >> students[i].name >> students[i].kor >> students[i].eng >> students[i].math;
+        string name;
+        int kor,eng,math;
+        cin >> name >> kor >>eng>> math;
+        students[i] = student(name, kor, eng, math);
     }
 
     sort(students,students+n,cmp);
