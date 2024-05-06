@@ -8,11 +8,11 @@ class abc{
         char place;
         int time;
 
-    abc(string _seccode, char _place, int _time){
-        this->seccode = _seccode;
-        this->place = _place;
-        this->time = _time;
-    }
+        abc(string _seccode, char _place, int _time){
+            this->seccode = _seccode;
+            this->place = _place;
+            this->time = _time;
+        }
 };
 
 int main() {
