@@ -18,6 +18,8 @@ bool cmp_h(person a, person b){
     return a.h>b.h;
 }
 int main() {
+    cout << fixed;
+    cout.precision(1);
     person group[5] = {};
     for(int i=0;i<5;i++){
         cin >> group[i].name >> group[i].h >> group[i].w;
