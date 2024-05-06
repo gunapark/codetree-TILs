@@ -12,11 +12,12 @@ class student{
 
 bool cmp(student a, student b){
     if(a.h==b.h){
-        if(a.w==a.w){
+        if(a.w==b.w){
             return a.number<b.number;
         }
         return a.w>b.w;
-    } return a.h>b.h;
+    } 
+    return a.h>b.h;
 }
 
 int main() {
