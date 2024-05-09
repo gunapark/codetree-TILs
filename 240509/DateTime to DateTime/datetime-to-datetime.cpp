@@ -8,15 +8,15 @@ int main() {
 
     while(true){
         if(day<11) {
-            day=-1;
+            cnt_min=-1;
             break;
         }
         if(day==11 && hour<11){
-            day=-1;
+            cnt_min=-1;
             break;
         }
         if(day==11 && hour ==11 && min<11){
-            day=-1;
+            cnt_min=-1;
             break;
         }
         if(day==11 && hour ==11 && min==11)
