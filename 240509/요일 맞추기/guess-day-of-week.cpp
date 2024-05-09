@@ -5,7 +5,7 @@ using namespace std;
 
 int main() {
     int day_of_week_count = 1;
-    string day_of_week[7]={"Sun","Mon","Tue","Wed","The","Fri","Sat"};
+    string day_of_week[7]={"Sun","Mon","Tue","Wed","Thu","Fri","Sat"};
     int day_of_month[12] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
     int start_month, start_day, end_month, end_day;
     cin >> start_month >> start_day >> end_month >> end_day;
@@ -24,9 +24,7 @@ int main() {
     
     
     int gap = sum_end - sum_start;
-
     gap %= 7;
-
     day_of_week_count += gap;
 
     day_of_week_count %=7;
