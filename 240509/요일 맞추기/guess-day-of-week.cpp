@@ -25,14 +25,12 @@ int main() {
     
     int gap = sum_end - sum_start;
 
-    if(gap<0){
-        gap %= -7;
-        day_of_week_count += gap;
-    } else{
-        gap %=7;
-        day_of_week_count +=gap;
-        day_of_week_count%7;
-    }
+    gap %= 7;
+
+    day_of_week_count += gap;
+
+    day_of_week_count %=7;
+
     cout << day_of_week[day_of_week_count];
 
     return 0;
