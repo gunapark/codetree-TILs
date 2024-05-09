@@ -36,7 +36,7 @@ int main() {
     diff %= 7;
 
 
-    if(diff<=int_dydlf){
+    if(int_dydlf>=1){
         week++;
     }
     cout << week;
