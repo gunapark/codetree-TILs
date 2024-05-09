@@ -25,18 +25,15 @@ int main() {
             int_dydlf = i;
         }
     }
-
+    cout << int_dydlf << endl;
 
     int diff = total_day(m2,d2) - total_day(m1,d1);
+    cout << diff << endl;
+    int day_of_end = (diff%7+1)%7;
     int week=0;
 
     week = diff/7;
-
-
-    diff %= 7;
-
-
-    if(diff+1>=1){
+    if(day_of_end<=int_dydlf){
         week++;
     }
 
