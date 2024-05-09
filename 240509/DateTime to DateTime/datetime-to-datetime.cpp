@@ -7,6 +7,18 @@ int main() {
     cin >> day >> hour >>min;
 
     while(true){
+        if(day<11) {
+            day=-1;
+            break;
+        }
+        if(day==11 && hour<11){
+            day=-1;
+            break;
+        }
+        if(day==11 && hour ==11 && min<11){
+            day=-1;
+            break;
+        }
         if(day==11 && hour ==11 && min==11)
             break;
         cnt_min++;
