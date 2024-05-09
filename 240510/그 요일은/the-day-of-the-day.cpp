@@ -27,14 +27,17 @@ int main() {
     }
 
     int diff = total_day(m2,d2) - total_day(m1,d1);
-    int day_of_end = (diff%7+1)%7;
-    int week=0;
-
-    week = diff/7;
-    if(day_of_end>=int_dydlf){
-        week++;
+    int day=0,cnt=0;
+    while(true){
+        if(day_of_week_cnt==int_dydlf){
+            cnt++;
+        }
+        if(day==diff) break;
+        day++;
+        day_of_week_cnt++;
+        if(day_of_week_cnt==7) day_of_week_cnt=0;
     }
 
-    cout << week;
+    cout << cnt;
     return 0;
 }
