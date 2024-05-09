@@ -23,25 +23,17 @@ int main() {
     sum_end += end_day;
     
     
-    int ssibal = sum_end - sum_start;
-    if(ssibal<0){
-        while(true){
-            if(ssibal<-6){
-                ssibal+=7;
-            } else break;
-        }
-        day_of_week_count += ssibal;
-    }
+    int gap = sum_end - sum_start;
 
-    else{
-        ssibal%7;
-        day_of_week_count += ssibal;
-        if(day_of_week_count == 7){
-            day_of_week_count = 0;
-        }
+    if(gap<0){
+        gap %= -7;
+        day_of_week_count += gap;
+    } else{
+        gap %=7;
+        day_of_week_count +=gap;
+        day_of_week_count%7;
     }
-    
-
     cout << day_of_week[day_of_week_count];
+
     return 0;
 }
