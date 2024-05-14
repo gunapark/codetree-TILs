@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+/*
 int main() {
     int n;
     cin >> n;
@@ -19,4 +19,22 @@ int main() {
     }
     cout << max;
     return 0;
+}
+*/
+int main(){
+    int n;
+    cin >> n;
+    int arr[201]={};
+    for(int i=0;i<n;i++){
+        int start, end;
+        cin >> start >> end;
+        for(int j=start;j<end;j++){
+            arr[j]++;
+        }
+    }
+    int max=0;
+    for(int i=0;i<201;i++){
+        if(arr[i]>max) max = arr[i];
+    }
+    cout << max;
 }
