@@ -28,7 +28,7 @@ int main(){
     for(int i=0;i<n;i++){
         int start, end;
         cin >> start >> end;
-        for(int j=start;j<end;j++){
+        for(int j=start+100;j<end+100;j++){
             arr[j]++;
         }
     }
@@ -37,4 +37,5 @@ int main(){
         if(arr[i]>max) max = arr[i];
     }
     cout << max;
+    return 0;
 }
