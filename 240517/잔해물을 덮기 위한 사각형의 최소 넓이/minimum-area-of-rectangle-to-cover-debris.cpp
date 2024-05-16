@@ -28,6 +28,7 @@ int main() {
         }
     }
     int min_x=2001, max_x=-2001, min_y=2001, max_y=-2001;
+    int cnt_area=0;
     for(int i=0;i<2001;i++){
         for(int j=0;j<2001;j++){
             if(area[i][j]==1){
@@ -35,10 +36,14 @@ int main() {
                 else max_x=i;
                 if(j<min_y) min_y=j;
                 else max_y=j;
+                cnt_area++;
             }
         }
     }
-
+    if(cnt_area==0){
+        cout << 0;
+        return 0;
+    }
     cout << (max_x-min_x+1)*(max_y-min_y+1);
     return 0;
 }
