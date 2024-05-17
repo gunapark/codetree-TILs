@@ -5,6 +5,10 @@ class Student{
     public:
         int num;
         int penalty;
+        Student(int num=0,int penalty=0){
+            this->num = num;
+            this->penalty=penalty;
+        }
 };
 
 int main() {
