@@ -15,7 +15,7 @@ int main() {
     for(int i=0;i<n;i++){
         if(arr[i]>t && (i==0 || arr[i]>arr[i-1])) cnt++;
         else if(arr[i]>t) cnt=1;
-        else if(arr[i]<=t) cnt=0;
+        else cnt=0;
         max_cnt = max(cnt, max_cnt);
     }
 
