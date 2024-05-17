@@ -3,8 +3,8 @@ using namespace std;
 
 int main() {
     int n,m;
-    int a_dis[100000]={};
-    int b_dis[100000]={};
+    int a_dis[1000000]={};
+    int b_dis[1000000]={};
     cin >> n >> m;
 
     int cnt_a_time=0;
