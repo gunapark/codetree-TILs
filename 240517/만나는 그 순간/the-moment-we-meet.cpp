@@ -4,8 +4,8 @@ using namespace std;
 
 int main() {
     int n,m;
-    int A_dis[100000]={};
-    int B_dis[100000]={};
+    int A_dis[1000000]={};
+    int B_dis[1000000]={};
     cin >> n >> m;
     
     int time_cnt =0;
