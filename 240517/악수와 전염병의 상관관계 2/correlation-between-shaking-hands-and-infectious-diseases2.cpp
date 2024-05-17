@@ -48,7 +48,7 @@ int main() {
         if(developers[info[i].x].covid==1 && developers[info[i].x].handshake<max_handshake){
             developers[info[i].y].covid=1;
         }
-        if(developers[info[i].y].covid==1 && developers[info[i].y].handshake<max_handshake){
+        else if(developers[info[i].y].covid==1 && developers[info[i].y].handshake<max_handshake){
             developers[info[i].x].covid=1;
         }
         developers[info[i].x].handshake++;
