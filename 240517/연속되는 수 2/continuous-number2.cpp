@@ -16,7 +16,7 @@ int main() {
         if(i==0 || arr[i]==arr[i-1]){
             cnt++;
         }else cnt=0;
-        if(cnt>max_cnt){
+        if(cnt>=max_cnt){
             max_cnt=cnt;
         }
     }
