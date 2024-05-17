@@ -19,6 +19,9 @@ int main() {
         }
         time_a +=t;
     }
+    for(int i=time_a;i<1000000;i++){
+        A[i]=A[time_a-1];
+    }
     
     int time_b=1;
     for(int i=0;i<m;i++){
@@ -31,6 +34,7 @@ int main() {
         }
         time_b +=t;
     }
+
     for(int i=time_b;i<1000000;i++){
         B[i]=B[time_b-1];
     }
