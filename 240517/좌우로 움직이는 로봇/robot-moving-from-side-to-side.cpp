@@ -5,8 +5,8 @@ using namespace std;
 int main() {
     int n,m;
     cin >> n >> m;
-    int A[1000000]={};
-    int B[1000000]={};
+    int A[1500000]={};
+    int B[1500000]={};
 
     int time_a=1;
     for(int i=0;i<n;i++){
