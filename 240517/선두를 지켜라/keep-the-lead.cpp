@@ -26,10 +26,21 @@ int main() {
             cnt_b_time++;
         }
     }
-    int cnt=0;
-    for(int i=1;i<=cnt_a_time;i++){
-        if(a_dis[i]==b_dis[i] && a_dis[i+1]!=b_dis[i+1]) cnt++;
+    int arr[cnt_a_time]={};
+    for(int i=1;i<cnt_a_time;i++){
+        if(a_dis[i]>b_dis[i]) arr[i]=1;
+        else arr[i]=3;
     }
+
+
+    int cnt=0;
+    for(int i=2;i<cnt_a_time;i++){
+        if(arr[i]!=arr[i-1]) {cnt++;}
+        
+    }
+
     cout << cnt;
+
+
     return 0;
 }
