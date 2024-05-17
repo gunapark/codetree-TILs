@@ -15,11 +15,9 @@ int main() {
     for(int i=0;i<n;i++){
         if(i==0 || arr[i]==arr[i-1]){
             cnt++;
-        }
-        if(cnt>max_cnt){
-            max_cnt=cnt;
-        }
-        if(arr[i]!=arr[i-1]) cnt=1;
+            if(cnt>max_cnt) max_cnt=cnt;
+        } else cnt=0;
+
     }
     cout << max_cnt;
     return 0;
