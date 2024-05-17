@@ -49,15 +49,15 @@ int main() {
             developers[info[i].y].covid=1;
             developers[info[i].x].handshake++;
         }
-        if(developers[info[i].y].covid==1 && developers[info[i].x].covid==0 && developers[info[i].y].handshake<max_handshake){
+        else if(developers[info[i].y].covid==1 && developers[info[i].x].covid==0 && developers[info[i].y].handshake<max_handshake){
             developers[info[i].x].covid=1;
             developers[info[i].y].handshake++;
         }
-        if(developers[info[i].x].covid==1 && developers[info[i].y].covid==1){
+        else if(developers[info[i].x].covid==1 && developers[info[i].y].covid==1){
             developers[info[i].x].handshake++;
             developers[info[i].y].handshake++;
         }
-        if(developers[info[i].x].covid==0 && developers[info[i]].y==covid==0) continue;
+        else if(developers[info[i].x].covid==0 && developers[info[i].y].covid==0) continue;
 
     }
     for(int i=1;i<=num_of_dev;i++){
