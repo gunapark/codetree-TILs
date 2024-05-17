@@ -17,7 +17,7 @@ int main() {
         max_cnt = max(cnt,max_cnt);
     }
 
-    if(max_cnt==0){
+    if(max_cnt<=1){
         cout << 0;
         return 0;
     }
