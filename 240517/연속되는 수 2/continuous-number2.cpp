@@ -16,10 +16,10 @@ int main() {
         if(i==0 || arr[i]==arr[i-1]){
             cnt++;
         }
-        if(cnt>=max_cnt){
+        if(cnt>max_cnt){
             max_cnt=cnt;
         }
-        if(arr[i]!=arr[i-1]) cnt=0;
+        if(arr[i]!=arr[i-1]) cnt=1;
     }
     cout << max_cnt;
     return 0;
