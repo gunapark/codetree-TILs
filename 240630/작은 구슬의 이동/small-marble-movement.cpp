@@ -13,9 +13,9 @@ int main() {
     cin >> r >> c >> d;
     int dir;
     if(d=='U'){
-        dir = 0;
-    } else if(d=='D'){
         dir = 3;
+    } else if(d=='D'){
+        dir = 0;
     } else if(d=='R'){
         dir = 1;
     } else dir =2;
