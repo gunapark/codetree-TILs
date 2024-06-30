@@ -20,16 +20,19 @@ int main() {
         dir = 1;
     } else dir =2;
     int x=c, y=r;
-
-    while(--t){
+    while(t--){
         if(x==1&&dir==2){
             dir = 1;
-        }else if(x==n&&d==1){
+            continue;
+        }else if(x==n&&dir==1){
             dir = 2;
-        }else if(y==1&&d==3){
-            dir == 0;
-        }else if(y==n&&d==0){
+            continue;
+        }else if(y==1&&dir==0){
             dir == 3;
+            continue;
+        }else if(y==n&&dir==3){
+            dir == 0;
+            continue;
         }
         x += dx[dir];
         y += dy[dir];
