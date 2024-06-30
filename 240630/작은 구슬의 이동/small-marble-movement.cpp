@@ -27,11 +27,11 @@ int main() {
         }else if(x==n&&dir==1){
             dir = 2;
             continue;
-        }else if(y==1&&dir==0){
-            dir == 3;
-            continue;
-        }else if(y==n&&dir==3){
+        }else if(y==1&&dir==3){
             dir == 0;
+            continue;
+        }else if(y==n&&dir==0){
+            dir == 3;
             continue;
         }
         x += dx[dir];
