@@ -6,8 +6,9 @@ int main() {
     char a;
     cin >> a;
     int b = (int)a;
-
-    cout << (char)(b%122+1);
+    
+    if(b==122) cout << 'a';
+    else cout << (char)(b+1);
 
     return 0;
 }
