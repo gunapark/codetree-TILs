@@ -18,15 +18,14 @@ int main() {
 
     for(auto it=map.begin();it!=map.end();it++){
         if(map.find(k-(it->first))!=map.end()){
-            if(map[k-(it->first)]==1&&it->first==1){
-                cnt++;
-                map.erase(it->first);
+            if((it->first)*2==k){
+                cnt+=(it->second)*(it->second-1)/2;
             }else{
-                for(int i=map[k-it->first]-1;i!=0;i--){
-                    cnt+=i;
-                }
+                cnt += it->second*map[k-(it->first)];
+                map.erase(k-(it->first));
             }
-        }else{
+        }
+        else{
             continue;
         }
     }
