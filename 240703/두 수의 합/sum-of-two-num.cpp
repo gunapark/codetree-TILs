@@ -15,10 +15,17 @@ int main() {
         cin >> a;
         map[a]++;
     }
+
     for(auto it=map.begin();it!=map.end();it++){
         if(map.find(k-(it->first))!=map.end()){
-            cnt++;
-            map.erase(k-(it->first));
+            if(map[k-(it->first)]==1){
+                map.erase(k-(it->first));
+                cnt++;
+            }else{
+                for(int i=map[k-it->first]-1;i!=0;i--){
+                    cnt+=i;
+                }
+            }
         }else{
             continue;
         }
