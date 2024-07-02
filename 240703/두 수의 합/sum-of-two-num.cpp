@@ -18,8 +18,9 @@ int main() {
 
     for(auto it=map.begin();it!=map.end();it++){
         if(map.find(k-(it->first))!=map.end()){
-            if(map[k-(it->first)]==1){
+            if(map[k-(it->first)]==1&&it->first==1){
                 cnt++;
+                map.erase(it->first);
             }else{
                 for(int i=map[k-it->first]-1;i!=0;i--){
                     cnt+=i;
