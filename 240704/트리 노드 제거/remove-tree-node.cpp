@@ -42,7 +42,6 @@ int main() {
 
     if(dnode==0){
         cout << 0;
-        cout << "exception"<< endl;
         return 0;
     }
     //node들을 찾아다니면서 dnode가 있는지 탐색
