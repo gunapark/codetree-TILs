@@ -39,6 +39,10 @@ int main() {
     int dnode;
     cin >> dnode;
 
+    if(dnode==0){
+        cout << 0;
+        return 0;
+    }
     //edge를 찾아다니면서 dnode가 있는지 탐색
     for(int i=0;i<n;i++){
         for(int j=0;j<(int)edges[i].size();j++){
