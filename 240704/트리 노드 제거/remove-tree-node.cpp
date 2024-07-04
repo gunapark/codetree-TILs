@@ -9,13 +9,14 @@ vector<int> edges[MAX_N];
 bool visit[MAX_N];
 int cnt_leaf = 0;
 
-void count_leaf_node(int node){
-    if((int)edges[node].size()==0) cnt_leaf++;
-    
-    for(int i=0;i<(int)edges[node].size();i++){
-        if(!visit[i]){
-            visit[i]=true;
-            count_leaf_node(i);
+int count_leaf_node(int node){
+    if((int)edges[node].size()==0) return 1;
+    else{
+        for(int i=0;i<(int)edges[node].size();i++){
+            if(!visit[i]){
+                visit[i]=true;
+                return 0 + count_leaf_node(i);
+            }
         }
     }
 }
@@ -26,7 +27,6 @@ int main() {
 
     for(int i=0;i<n;i++){
         int a;
-        
         //2번째 줄을 입력을 받음.
         cin >> a;
         //루트 노드는 아무것도 하지 않음.
@@ -39,11 +39,13 @@ int main() {
     //삭제할 노드를 입력 받음.
     int dnode;
     cin >> dnode;
+
     if(dnode==0){
         cout << 0;
+        cout << "exception"<< endl;
         return 0;
     }
-    //edge를 찾아다니면서 dnode가 있는지 탐색
+    //node들을 찾아다니면서 dnode가 있는지 탐색
     for(int i=0;i<n;i++){
         for(int j=0;j<(int)edges[i].size();j++){
             if(edges[i][j]==dnode)
@@ -56,8 +58,8 @@ int main() {
         visit[i]=false;
     }
     visit[0]=true;
-    count_leaf_node(0);
-    cout << cnt_leaf;
+
+    cout << count_leaf_node(0);
 
     return 0;
 }
