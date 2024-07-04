@@ -22,6 +22,7 @@ void count_leaf_node(int node){
 
 int main() {
     int n;
+    cin >> n;
 
     for(int i=0;i<n;i++){
         int a;
@@ -38,7 +39,6 @@ int main() {
     //삭제할 노드를 입력 받음.
     int dnode;
     cin >> dnode;
-
     if(dnode==0){
         cout << 0;
         return 0;
