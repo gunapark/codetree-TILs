@@ -28,11 +28,11 @@ int main() {
 
     right[n-1]=0;
     for(int i=n-2;i>=0;i--){
-        right[i] = right[i-1]+abs(checkpoint[i].first-checkpoint[i+1].first)+abs(checkpoint[i].second-checkpoint[i+1].second);
+        right[i] = right[i+1]+abs(checkpoint[i].first-checkpoint[i+1].first)+abs(checkpoint[i].second-checkpoint[i+1].second);
     }
 
     int min_dist = INT_MAX;
-    for(int i=1;i<n-1;i++){
+    for(int i=1;i<n-2;i++){
         int dist = left[i-1]+right[i+1]+abs(checkpoint[i-1].first-checkpoint[i+1].first)+abs(checkpoint[i-1].second-checkpoint[i+1].second);
         min_dist = min(min_dist, dist);
     }
