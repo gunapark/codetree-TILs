@@ -7,17 +7,17 @@ int s;
 int main() {
     cin >> s;
 
-    int left = 1, right = 4000, res, mid;
+    long long left = 1, right = 4000, res=0, mid;
     while(left<=right){
-        mid = (left+right)/2;
-        if(mid*(mid+1)/2 >= s){
-            right = mid-1;
-            res = mid;
+        long long mid = (left+right)/2;
+        if(mid*(mid+1)/2 <= s){
+            left = mid+1;
+            res = max(mid,res);
         }
         else{
-            left = mid+1;
+            right = mid-1;
         }
     }
-    cout << res-1;
+    cout << res;
     return 0;
 }
