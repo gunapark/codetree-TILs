@@ -7,7 +7,7 @@ int s;
 int main() {
     cin >> s;
 
-    long long left = 1, right = 200000000000, res=0, mid;
+    long long left = 1, right = 2000000000, res=0, mid;
     while(left<=right){
         long long mid = (left+right)/2;
         if(mid*(mid+1)/2 <= s){
