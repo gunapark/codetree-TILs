@@ -2,7 +2,7 @@
 #include <limits.h>
 using namespace std;
 
-int s;
+long long s;
 
 int main() {
     cin >> s;
