@@ -18,19 +18,17 @@ bool IsPossible(int mid){
 
 int main() {
     cin >> n >> m;
-    min_val = 10000000;
     for(int i=0;i<n;i++){
         cin >> arr[i];
-        min_val = min(arr[i],min_val);
     }
     int left = 1;
-    int right = min_val*2;
-    int ans;
+    int right = 100000;
+    int ans=0;
     while(left <= right){
         int mid = (left+right)/2;
         if(IsPossible(mid)){
             left = mid +1;
-            ans = mid;
+            ans = min(mid,ans);
         }
         else {
             right = mid -1;
