@@ -28,7 +28,7 @@ int main() {
         int mid = (left+right)/2;
         if(IsPossible(mid)){
             left = mid +1;
-            ans = min(mid,ans);
+            ans = mid;
         }
         else {
             right = mid -1;
