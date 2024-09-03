@@ -15,7 +15,7 @@ int main() {
     for(int i=1;i<=n*m;i++){
         int nt_x = x+dx[dir];
         int nt_y = y+dy[dir];
-        if(nt_x>m || nt_y>n || check[nt_x][nt_y]|| nt_x<1 || nt_y<1){
+        if(nt_x>n || nt_y>m || check[nt_x][nt_y]|| nt_x<1 || nt_y<1){
             dir = (dir+1)%4;
         }
         x += dx[dir];
@@ -24,11 +24,13 @@ int main() {
         check[x][y] = true;
     }
 
-    for(int i=1;i<=m;i++){
-        for(int j=1;j<=n;j++){
-            cout << arr[j][i] << ' ';
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=m;j++){
+            cout << arr[i][j] << ' ';
         }
         cout << endl;
     }
+
+
     return 0;
 }
